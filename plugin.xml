@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-app-update" version="0.1.0">
+    <name>Application Update</name>
+    <description>Cordova Application Update Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,apk,android</keywords>
+    <js-module src="www/update.js">
+        <clobbers target="AppUpdate" />
+    </js-module>
+    <dependency id="cordova-plugin-file-transfer" />
+    <dependency id="cordova-plugin-app-version" />
+    <dependency id="com.borismus.webintent" url="https://github.com/Initsogar/cordova-webintent.git" />
+    
+    <!-- android -->
+    <platform name="android">
+      <config-file target="config.xml" parent="/*">
+          <feature name="AppUpdate">
+              <param name="android-package" value="com.smallthngs.cordova.AppUpdate"/>
+          </feature>
+      </config-file>
+
+      <source-file src="src/android/AppUpdate.java" target-dir="src/com/smallthngs/cordova" />
+    </platform>
+</plugin>
