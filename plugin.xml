@@ -10,7 +10,7 @@
     </js-module>
     <dependency id="cordova-plugin-file-transfer" />
     <dependency id="cordova-plugin-app-version" />
-    <dependency id="com.borismus.webintent" url="https://github.com/Initsogar/cordova-webintent.git" />
+    <dependency id="bundle-cordova-webintent" url="https://github.com/smallthngs/bundle-cordova-webintent" />
     
     <!-- android -->
     <platform name="android">
