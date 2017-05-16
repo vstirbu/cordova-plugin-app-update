@@ -2,6 +2,12 @@ var cordova = require('cordova');
 
 function AppUpdate() {}
 
+/**
+ * @param {string} baseUrl          url of the apks distribution service
+ * @param {object} loadingStatus    an object that manages apk download progress.
+ *                                  it must have setPercentage and increment fucntions.
+ * @param {function} callback       function called when the the update is finished
+ */
 AppUpdate.prototype.update = function (baseUrl, loadingStatus, callback) {
     Promise.all([
         window.cordova.getAppVersion.getPackageName(), 
