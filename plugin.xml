@@ -8,7 +8,7 @@
     <js-module src="www/update.js">
         <clobbers target="AppUpdate" />
     </js-module>
-    <dependency id="cordova-plugin-file-transfer" />
+    <dependency id="cordova-plugin-file-transfer@1.6.3"/>
     <dependency id="cordova-plugin-app-version" />
     <dependency id="bundle-cordova-webintent" url="https://github.com/smallthngs/bundle-cordova-webintent" />
     
